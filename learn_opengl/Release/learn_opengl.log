@@ -1,0 +1,21 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (learn_opengl_stage3.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(225,22): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(286,21): warning C4018:  '<': signed/unsigned mismatch
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(307,67): warning C4305:  'argument': truncation from 'double' to 'float'
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(368,21): warning C4018:  '<': signed/unsigned mismatch
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(467,17): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(468,17): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(471,16): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(472,16): warning C4244:  'initializing': conversion from 'double' to 'float', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(473,16): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(474,16): warning C4244:  '=': conversion from 'double' to 'int', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(479,44): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\projects\learn_opengl_stage4\learn_opengl\main.cpp(479,35): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+  glad.c
+  Generating code
+  109 of 968 functions (11.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  learn_opengl.vcxproj -> C:\projects\learn_opengl_stage4\Release\learn_opengl_stage4.exe
