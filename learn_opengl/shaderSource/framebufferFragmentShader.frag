@@ -20,20 +20,28 @@ void main(){
         vec2( 0.0f,   -offset), // ¥¿¤U
         vec2( offset, -offset)  // ¥k¤U
     );
+
+	//---Types of kernel---
 	//Sharpen
-//    float kernel[9] = float[](
-//        -1, -1, -1,
-//        -1,  9, -1,
-//        -1, -1, -1
-//    );
+    float normal_kernel[9] = float[](
+        0, 0, 0,
+        0, 1, 0,
+        0, 0, 0
+    );
+	//Sharpen
+    float sharpen_kernel[9] = float[](
+        -1, -1, -1,
+        -1,  9, -1,
+        -1, -1, -1
+    );
 	//Blur
-//	float kernel[9] = float[](
-//		2.0/16, 2.0/16, 2.0/16,
-//		2.0/16, 4.0/16, 2.0/16,
-//		2.0/16, 2.0/16, 2.0/16
-//	);
+ 	float blur_kernel[9] = float[](
+ 		2.0/16, 2.0/16, 2.0/16,
+ 		2.0/16, 4.0/16, 2.0/16,
+ 		2.0/16, 2.0/16, 2.0/16
+  	);
 	//Edge-detection
-	float kernel[9] = float[](
+	float edge_detection_kernel[9] = float[](
 		1,  1,  1,
 		1, -8,  1,
 		1,  1,  1
@@ -45,7 +53,7 @@ void main(){
 	}
 	vec3 col = vec3(0.0);
 	for (int i = 0; i < 9; i++)
-		col += sampleTex[i] * kernel[i];
+		col += sampleTex[i] * normal_kernel[i];		// choose a kernel here (blur, sharpen...)
 	FragColor = vec4(col, 1.0);
 
 	//-------------Weighted Grey-------------
